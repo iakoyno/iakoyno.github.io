@@ -1,10 +1,9 @@
 @PATH="C:\Program Files\Git\bin";%PATH%
 @set message="++"
 @set /p message=commit message:
-echo  %message%
 
 git status
 git add .
-git commit -am "++"
+git commit -am "%message%"
 git push origin master
 @pause
