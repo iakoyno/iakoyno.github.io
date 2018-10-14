@@ -6,3 +6,4 @@
 * git-push.bat - upload
 * git-diff.bat - view diff
 * git-status.bat - view status
+:P
