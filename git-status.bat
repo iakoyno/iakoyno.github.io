@@ -1,3 +1,3 @@
-PATH="C:\Program Files\Git\bin";%PATH%
+@PATH="C:\Program Files\Git\bin";%PATH%
 git status
-pause
+@pause
