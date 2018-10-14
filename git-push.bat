@@ -1,5 +1,5 @@
 @PATH="C:\Program Files\Git\bin";%PATH%
-@set message="++"
+@set message="checkpoint"
 @set /p message=commit message:
 
 git status
