@@ -17,6 +17,7 @@ font-size: 250%;
 font-weight: bold;
 text-align: center;
 padding: 30px 5px;
+display:grid;
 grid-column: 1 / 3;
 grid-row:1;
 }
@@ -51,7 +52,7 @@ grid-template-columns: fit-content(25%)  auto;
 #logo {
 font-family: 'Marck Script', cursive;
 font-size: 2.3em;
-margin: 2px 0 0 20px;
+margin: 4px 0 0 20px;
 color: #0c1d39;
 }
 
@@ -59,12 +60,10 @@ nav ul {
     font-family: 'Jura', sans-serif;
     margin: 0 auto;
     padding: 0;
-	float:right;
-    overflow: hidden;
 }
 
 nav li a {
-    display: inline-block;
+    display: inline-flex;
     color: #0f141d;
     text-align: center;
 	letter-spacing: 1px;
@@ -84,7 +83,7 @@ section#about {
 display:grid;
 grid-gap:10px;
 grid-template-columns: auto;
-grid-template-rows: 13% auto;
+grid-template-rows: auto;
 max-width:100%;
 height: 100vh;
 margin: 10px auto;
@@ -97,13 +96,13 @@ font-size: 250%;
 font-weight: bold;
 text-align: center;
 padding: 30px 5px;
-display:grid;
+/*display:grid;
 grid-column: 1 / 3;
-grid-row:1;
+grid-row:1;*/
 }
 
 .aboutimg {
-background-image: url("../img/ralitsa-about-sm.jpg");
+/*background-image: url("../img/ralitsa-about-sm.jpg");*/
 background-size: cover;
 background-repeat: no-repeat;
 }
@@ -118,19 +117,12 @@ padding: 10px 10px 10px 10px;
 /* HORIZONTAL TABS */
 		*, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box;}	
 		
-		.left {float:left;}
-		.right {float:right;}
-		.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-	section#about	p {margin: 0 0 20px; line-height: 1.5; font-size:1.1em;}
+	section#about	p {margin: 0 0 20px 20px; line-height: 1.5; font-size:1.1em;}
 		
 		.aboutimg {
 		background-image:url("../img/ralitsa-about.jpg");
 		width:40%;
-		height:100vh;
+		/*height:100vh;*/
 		background-size: cover;
 		background-position: bottom;
 		background-repeat: no-repeat;
@@ -143,7 +135,7 @@ padding: 10px 10px 10px 10px;
 		.content > div {display: none;}
 
 		input {display: none;}
-		label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;}
+		label {display: inline-flex; padding: 15px 25px; font-weight: 600; text-align: center;}
 		label:hover {color:#1d478e; cursor: pointer;}
 		input:checked + label {border-top: 2px solid #1d478e; color:#1d478e;}
 
