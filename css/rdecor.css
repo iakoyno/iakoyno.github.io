@@ -28,6 +28,9 @@ section#home {
 	width:100%;
     height: 100vh;
 	z-index:100;
+	display:grid;
+	grid-template-columns: /*fit-content(25%)*/ auto  auto;
+	
 }
 
 #bg-overlay {
@@ -312,6 +315,8 @@ grid-template-columns: auto;
 grid-template-rows: 18% auto;
 max-width:100%;
 width:100%;
+position:relative;
+right:0;
 /*height: 100vh;
 margin: 10px 0 0 0;*/
 }
@@ -368,6 +373,10 @@ align-content: end;*/
 /*-------------------------------------------------FOOTER SECTION------------------------------------------------------------*/
 
 footer {
+width:100%;
+position:relative;
+right:0;
+top:0;
 background-color:#0f151d;
 color:#fff;
 text-align: center;
