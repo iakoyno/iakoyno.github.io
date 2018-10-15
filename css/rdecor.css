@@ -375,9 +375,6 @@ align-content: end;*/
 
 footer {
 width:100%;
-position:relative;
-right:0;
-top:0;
 background-color:#0f151d;
 color:#fff;
 text-align: center;
