@@ -125,7 +125,7 @@ min-width: 320px;
 max-width: 100%; 
 }
 
-.content {background: #fff; color: #a29eae; margin-top:30px;}
+.content {background: #fff; color: #a29eae; margin-top:30px;     overflow: overlay;}
 .content > div {display: none;}
 
 section#about	p {margin: 0 20px 20px 20px; line-height:1.1; font-size:1.1em;}
@@ -156,6 +156,7 @@ grid-gap:10px;
 grid-template-columns: auto auto auto;
 grid-template-rows: 15% auto auto auto;
 max-width:100%;
+height:100vh;
 margin: 10px auto;
 position:relative;
 top:0;
