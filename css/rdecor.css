@@ -100,13 +100,33 @@ grid-row:1;
 align-items: end;
 }
 
-/*.aboutimg {
+.aboutimg {
 background-image: url("../img/ralitsa-about-sm.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 }
 
-.about-text p {
+.eduimg {
+background-image: url("../img/ralitsa-edu.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.philoimg {
+background-image: url("../img/ralitsa-philosophy.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.fengimg {
+background-image: url("../img/ralitsa-feng.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+
+/*.about-text p {
 color: #606153;
 line-height: 25px;
 letter-spacing: 0.01em;
@@ -118,14 +138,15 @@ padding: 10px 10px 10px 10px;
 
 
 .horiztabs {
-color: #B9B5C7; 
+color: #B9B5C7;
+text-align:center; 
 margin: 20px auto; 
 min-width: 320px; 
 max-width: 100%; 
 min-height:100vh;
 }
 
-.content {background: #fff; color: #a29eae; margin-top:30px;  overflow: overlay;}
+.content {background: #fff; color: #a29eae; margin-top:30px;  text-align:left;}
 .content > div {display: none;}
 
 section#about	p {margin: 0 20px 20px 20px; line-height:1.3; font-size:1.3em;}
@@ -147,8 +168,9 @@ input:checked + label {border-top: 2px solid #1d478e; color:#1d478e;}
 #tab4:checked ~ .content #content4.im {
 		display: grid;
 		grid-gap:10px;
-		grid-template-columns: 1fr 5fr;
-		
+		grid-template-columns: 2fr 4fr;
+		grid-template-rows:1fr;
+		height:85vh;
 		}
 		
 		
