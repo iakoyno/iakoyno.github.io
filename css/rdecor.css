@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700|Marck+Script&subset=cyrillic');
 
+@font-face {
+    font-family: 'neumannregular';
+    src: url('../fonts/td-neumann-webfont.eot');
+    src: url('../fonts/td-neumann-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/td-neumann-webfont.woff2') format('woff2'),
+         url('../fonts/td-neumann-webfont.woff') format('woff'),
+         url('../fonts/td-neumann-webfont.ttf') format('truetype'),
+         url('../fonts/td-neumann-webfont.svg#neumannregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *,*::before, *::after {margin:0; padding:0; box-sizing: border-box;}
 
-body {margin:0; font-family: 'Jura', sans-serif;}
+body {margin:0; font-family: 'Jura', sans-serif; font-size:1em; color:#242322;}
 
 a {text-decoration:none;}
 ul {list-style-type:none;}
@@ -11,6 +22,7 @@ ul li {display:inline;}
 img {padding: 0; margin: 0;}
 
 /*-------------------------------------------------HOME SECTION------------------------------------------------------------*/
+
 section#home {
     background:#fff url("../img/bg.jpg") no-repeat center center;
     background-size: cover;
@@ -22,198 +34,165 @@ section#home {
 	z-index:100;
 }
 
-#bg-overlay {
-    position:absolute;
-    top:0;
-    bottom:0;
-    height: 100vh;
-    width:100%;
-    z-index: 105;
-    background-color: rgba(0, 0, 0, 0.2);
-} 
-
 header {
-background-color: #e5e5e4;  
-box-shadow: 0 4px 4px -2px #43424a;
+background-color: #eeeae7;  
+box-shadow: 0 4px 4px -2px #665d4d;
 width:100%;
 display:grid;
-grid-template-columns: /*fit-content(25%)*/ auto  auto;
+grid-template-columns: 2fr 1fr 1fr 1fr;
 position:fixed;
 top:0;
 left:0;
 z-index:9999;
+padding:3px;
 }
 
 #logo {
-font-family: 'Marck Script', cursive;
-font-size: 2.3em;
-margin: 4px 0 0 20px;
-color: #0c1d39;
+/*font-family: 'neumannregular';*/
+font-size: 1.7em;
+letter-spacing: 0.02em;
+margin: 0 0 0 20px;
+color: #2d2b28;
 }
 
-nav ul {
-    font-family: 'Jura', sans-serif;
-    margin: 0 auto;
-    padding: 0;
+.menu {
+font-family: 'Jura', sans-serif;
+font-size: 1.2em;
+align-self: center;
+justify-self: center;
 }
 
-nav li a {
-    display: inline-flex;
-    color: #0f141d;
-    text-align: center;
-	letter-spacing: 1px;
-	padding: 15px 40px;
-    text-decoration: none;
-    font-size: 1.2em;
-}
+div.menu a {color: #393633;}
 
-nav li a:hover {
-    background-color: /*#43424a*/ #0c1d39;
-	color: #e5e5e4;
+div.menu a:hover, div.menu a:active {
+border-top: /*#43424a*/ 3px solid #393633;	
+padding:5px;
 }
 
 /*-------------------------------------------------ABOUT SECTION------------------------------------------------------------*/
 
 section#about {
 display:grid;
-grid-gap:10px;
-grid-template-columns: auto;
-grid-template-rows: 15% auto;
-max-width:100%;
-min-height:100vh;
-margin: 30px auto;
+grid-template-columns: auto auto;
+width:100%;
+height:100vh;
 position:relative;
 top:0;
 bottom:0;
 z-index:1;
+background-color:#2d2b28;
 }
 
-section#about h1 {
-font-family: 'Marck Script', cursive;
-color:#0c1d39; 
-font-size: 250%;
-font-weight: bold;
-text-align: center;
-display:grid;
-grid-column: 1;
-grid-row:1;
-align-items: end;
+.name {
+/*font-family: 'neumannregular';*/
+font-size: 3.2em;
+font-weight: 300;
+letter-spacing: 0.2em;
+color:#fff;
+line-height: 2em;
+/*border-bottom: 1px solid red;*/
+padding: 0 0 10px 0;
+}
+
+.aboutactivity {
+color:#eaeaea;
+align-self: center;
+justify-self: center;
+margin: 30px;
+}
+
+.aboutactivity p {
+margin:15px 0 15px 0; 
+font-size: 1.2em;
 }
 
 .aboutimg {
-background-image: url("../img/ralitsa-about-sm.jpg");
+/*background-image: url("../img/ralitsa-about-sm.jpg");
+width:100%;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat;*/
 }
 
-.eduimg {
-background-image: url("../img/ralitsa-edu.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-}
-
-.philoimg {
-background-image: url("../img/ralitsa-philosophy.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-}
-
-.fengimg {
-background-image: url("../img/ralitsa-feng.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-}
-
-
-
-/*.about-text p {
-color: #606153;
-line-height: 25px;
-letter-spacing: 0.01em;
-padding: 10px 10px 10px 10px;
-}*/
-
-/* HORIZONTAL TABS */
-*, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box;}	
-
-
-.horiztabs {
-color: #B9B5C7;
-text-align:center; 
-margin: 20px auto; 
-min-width: 320px; 
-max-width: 100%; 
-min-height:100vh;
-}
-
-.content {background: #fff; color: #a29eae; margin-top:30px;  text-align:left;}
-.content > div {display: none;}
-
-section#about	p {margin: 0 20px 20px 20px; line-height:1.3; font-size:1.3em;}
-
-input {display: none;}
-label {display:inline-flex; padding: 15px 25px; font-weight: 600; text-align: center;}
-label:hover {color:#1d478e; cursor: pointer;}
-input:checked + label {border-top: 2px solid #1d478e; color:#1d478e;}
-
-#tab1:checked ~ .content #content1,
-#tab2:checked ~ .content #content2,
-#tab3:checked ~ .content #content3,
-#tab4:checked ~ .content #content4 {
-		display: block;
-		}
-#tab1:checked ~ .content #content1.im,
-#tab2:checked ~ .content #content2.im,
-#tab3:checked ~ .content #content3.im,
-#tab4:checked ~ .content #content4.im {
-		display: grid;
-		grid-gap:10px;
-		grid-template-columns: 2fr 4fr;
-		grid-template-rows:1fr;
-		height:85vh;
-		}
-		
-		
-@media screen and (max-width: 400px) { label {padding: 15px 10px;} }
-
-
-
-
-/*-------------------------------------------------GALLERY SECTION------------------------------------------------------------*/
-
-section#gallery {
+/*-------------------------------------------------QUOTE SECTION------------------------------------------------------------*/ 
+section#quote {
 display:grid;
-grid-gap:10px;
-grid-template-columns: auto auto auto;
-grid-template-rows: 15% auto auto auto;
-max-width:100%;
-height:100vh;
-margin: 10px auto;
+grid-template-columns: auto;
+/*width:100%;
+height:100vh;*/
 position:relative;
 top:0;
-left:0;
+bottom:0;
 z-index:1;
+background-color:/*#7f7872*/ #fff;
+color:#2d2b28;
+align-content: center;
+justify-content: center;
 }
 
-section#gallery h1 {
-font-family: 'Marck Script', cursive;
-color:#0c1d39; 
-font-size: 250%;
+#quote p {
+margin: 3em;
+font-size: 2em;
+line-height: 1.5;
+text-align:center;
+}
+
+
+/*-------------------------------------------------TEXT ABOUT SECTION------------------------------------------------------------*/
+section#textabout {
+display:grid;
+grid-gap:15px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows:auto;
+width:100%;
+position:relative;
+top:0;
+bottom:0;
+z-index:1; 
+padding:30px;
+line-height:1.5em;
+background-image: url("../img/about1.jpg");
+background-size: cover;
+}
+
+div.title {
+font-size:2em;
+font-weight:bold;
+margin:15px 0 15px 0;
+color:#7f7872;
+}
+
+section#textabout p {margin:10px 0 10px 0;}
+
+.first {border-right:1px solid #f6f6f6;}
+.second {align-self: end; border-right:1px solid #f6f6f6;}
+.third {align-self: center;}
+
+
+/*-------------------------------------------------PORTFOLIO SECTION------------------------------------------------------------*/
+section#portfolio {
+display:grid;
+grid-gap:15px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 25% auto;
+width:100%;
+height:100vh;
+position:relative;
+top:0;
+bottom:0;
+z-index:1;
+margin-bottom:70px;
+}
+
+section#portfolio h1 {
+font-size: 2.3em;
+color:#7f7872;
 text-align: center;
 display:grid;
-grid-column: 1 / 4;
+grid-column: 2 / 3;
 grid-row:1;
-align-items: end;
-}
-
-.wrapper {
-    display: grid;
-    grid-gap:10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    max-width:100%;
-    height: 100vh;
-    margin: 10px auto;
+align-self: center;
+border-bottom: 1px solid #7f7872;
+padding-bottom:15px;
 }
 
 .box {
@@ -221,18 +200,19 @@ background-color:#b9b5c7;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-box-shadow:1px 0 2px rgba(0, 0, 0, .5) ;
 }
 
 .box p {
 color: #fff;
-font-size: 1.4em;
-padding: 10px;
+font-size: 1.2em;
+padding: 15px;
+text-align:center;
+font-weight:bold;
 background:rgba(0, 0, 0, .5);
 }
 
 .box.one {
-background-image: url("../img/1-caracal.jpg");
+background-image: url("../img/mezonet-kvartal_vitosha.jpg");
 display: grid;
 grid-column: 1;
 grid-row: 2;
@@ -240,105 +220,52 @@ align-content: end;
 }
 
 .box.two {
-background-image: url("../img/2-elephant.jpg");
+background-image: url("../img/2staen-kvartal_manastirski_livadi.jpg");
 display: grid;
 grid-column: 2;
 grid-row: 2;
-align-content: center;
+align-content: end;
 }
 
 .box.three {
-display:grid;
+background-image: url("../img/3staen-kvartal_simeonovo.jpg");
+display: grid;
 grid-column: 3;
 grid-row: 2;
-background-image: url("../img/3.jpg");
-align-content: start;
-}
-.box.four {
-display:grid;
-grid-column:1;
-grid-row: 3;
-align-content: center;
-background-image: url("../img/4-kitten.jpg");
-}
-.box.five {
-display:grid;
-grid-column:2;
-grid-row: 3;
-align-content: center;
-background-image: url("../img/5-tiger.jpg");
-}
-.box.six {
-display:grid;
-grid-column:3;
-grid-row:3;
-align-content: center;
-background-image: url("../img/6-fox.jpg");
-}
-.box.seven {
-display:grid;
-grid-column:1;
-grid-row:4;
-align-content: center;
-background-image:;
+align-content: end;
 }
 
-.box.eight {
-display:grid;
-grid-column:2;
-grid-row:4;
-align-content: center;
-background-image:;
-}
-
-.box.nine {
-display:grid;
-grid-column:3;
-grid-row:4;
-align-content: center;
-background-image:;
-}
 
 /*-------------------------------------------------CONTACTS SECTION------------------------------------------------------------*/
-
 section#contacts {
 width:100%;
 height:100vh;
 display:grid;
 grid-gap:10px;
 grid-template-columns: auto;
-grid-template-rows: 15% auto;
-}
-
-section#contacts h1 {
-font-family: 'Marck Script', cursive;
-color:#0c1d39; 
-font-size: 250%;
-text-align: center;
-display:grid;
-grid-column:1 / 2;
-grid-row:1;
-align-items: end;
+grid-template-rows:auto auto;
+background-image: url("../img/contacts.jpg");
+background-size: cover;
+background-position: center;
 }
 
 .contactmain {
 width:100%;
-background-image: url("../img/101.jpg");
-background-size: cover;
-background-position: center;
 display:grid;
 grid-column: 1 / 2;
 grid-row:2;
 }
 
 .contactmain p {
-background-color:rgba(15, 21, 29, 0.5);
-color: #e5e5e4;
+background-color:rgba(57, 54, 51, 0.5);
+color: #fff;
 text-align:center;
-line-height: 3;
+line-height: 2;
 font-size:2em;
-padding:5%;
+padding:25px;
 }
+
+.contactmain a {color:#fff;}
 
 .contactmain .contactinfo {
 display:grid;
@@ -355,7 +282,7 @@ position:relative;
 bottom:0;
 right:0;
 width:100%;
-background-color:#0f151d;
+background-color:#242322;
 color:#fff;
 text-align: center;
 padding: 10px 0;
