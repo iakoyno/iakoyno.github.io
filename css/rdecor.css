@@ -85,32 +85,30 @@ background-color:#2d2b28;
 
 .name {
 /*font-family: 'neumannregular';*/
-font-size: 3.2em;
+font-size: 2.8em;
 font-weight: 300;
 letter-spacing: 0.2em;
 color:#fff;
 line-height: 2em;
-/*border-bottom: 1px solid red;*/
-padding: 0 0 10px 0;
 }
 
 .aboutactivity {
 color:#eaeaea;
 align-self: center;
-justify-self: center;
-margin: 30px;
 }
 
 .aboutactivity p {
 margin:15px 0 15px 0; 
 font-size: 1.2em;
+text-align:right;
 }
 
 .aboutimg {
 background-image: url("../img/ralitsa-about-sm.jpg");
-width:100%;
+width:80%;
 background-size: cover;
 background-repeat: no-repeat;
+justify-self: end;
 }
 
 /*-------------------------------------------------QUOTE SECTION------------------------------------------------------------*/ 
