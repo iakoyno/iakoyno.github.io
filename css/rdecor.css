@@ -111,6 +111,13 @@ background-repeat: no-repeat;
 justify-self: end;
 }
 
+@media screen and (max-width: 40em;) {
+
+.name {font-size: 1.5em;}
+.aboutactivity p {font-size: 0.75em;}
+.aboutimg {width:50%;}
+}
+
 /*-------------------------------------------------QUOTE SECTION------------------------------------------------------------*/ 
 section#quote {
 display:grid;
