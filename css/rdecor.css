@@ -445,7 +445,11 @@ and (-webkit-min-device-pixel-ratio: 3)
 and (min-resolution: 192dpi)and max-width:640px) {
   background-image: url('https://i.ytimg.com/vi/zhBxfNm3rJE/maxresdefault.jpg');
   
+ #logo {
+font-size: 1.2em;
+}
+
   .name {
-font-size: 2.3em;
+font-size: 1.8em;
 }
 }
