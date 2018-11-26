@@ -321,6 +321,7 @@ font-weight:bold;
 section#about {
 display:grid;
 grid-template-columns: 1fr;
+grid-template-rows:1fr 1fr;
 }
 
 .name {
@@ -393,6 +394,45 @@ font-size:1em;
 
 footer { font-size:0.75em;}
 
+}
 
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
+  #logo {
+font-size: 1.2em;
+}
+
+.menu {
+font-size: 1em;
+margin: 1px;
+}
+
+section#about {
+display:grid;
+grid-template-columns: 1fr;
+grid-template-rows:1fr 1fr;
+}
+
+.name {
+font-size: 3em;
+}
+
+.aboutactivity p {
+font-size: 100%;
+margin: 20px;
+}
+
+.aboutimg {
+width:100%;
+}
+
+#quote p {
+font-size: 1.5em;
+text-align: justify;
+}
+  
 }
