@@ -577,6 +577,10 @@ font-size: 1em;
 font-size: 1.5em;
 }
 
+.aboutactivity p {
+font-size: 75%;
+}
+
 #quote p {
 font-size: 1em;
 }
