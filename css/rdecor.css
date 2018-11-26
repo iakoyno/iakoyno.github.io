@@ -12,13 +12,11 @@
     font-style: normal;
 }
 
-*,*::before, *::after {margin:0; padding:0; box-sizing: border-box;}
+*,*::before, *::after {margin:0; padding:0;}
 
-body {margin:0; font-family: 'Jura', sans-serif; font-size:1em; color:#242322;}
+body {margin:0; font-family: 'Jura', sans-serif; font-size:100%; color:#242322;}
 
 a {text-decoration:none;}
-ul {list-style-type:none;}
-ul li {display:inline;}
 img {padding: 0; margin: 0;}
 
 /*-------------------------------------------------HOME SECTION------------------------------------------------------------*/
@@ -44,7 +42,6 @@ position:fixed;
 top:0;
 left:0;
 z-index:9999;
-padding:3px;
 }
 
 #logo {
@@ -53,7 +50,10 @@ font-size: 1.7em;
 letter-spacing: 0.02em;
 margin: 0 0 0 20px;
 color: #2d2b28;
+font-weight:700;
 }
+
+.300 {font-weight:300;}
 
 .menu {
 font-family: 'Jura', sans-serif;
@@ -62,7 +62,7 @@ align-self: center;
 justify-self: center;
 }
 
-div.menu a {color: #393633;}
+div.menu a {color: #393633; font-weight: 600;}
 
 div.menu a:hover, div.menu a:active {
 border-top: /*#43424a*/ 3px solid #393633;	
@@ -73,7 +73,7 @@ padding:5px;
 
 section#about {
 display:grid;
-grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+grid-template-columns: 1fr 1fr;
 width:100%;
 height:100vh;
 position:relative;
@@ -98,24 +98,18 @@ align-self: center;
 }
 
 .aboutactivity p {
-margin:15px 0 15px 0; 
+margin:15px 20px 15px 0; 
 font-size: 1.2em;
 text-align:right;
 }
 
 .aboutimg {
 background-image: url("../img/ralitsa-about-sm.jpg");
-width:80%;
+width:100%;
 background-size: cover;
 background-repeat: no-repeat;
-justify-self: end;
-}
-
-@media screen and (max-width: 40em;) {
-
-.name {font-size: 1.5em;}
-.aboutactivity p {font-size: 0.75em;}
-.aboutimg {width:50%;}
+background-position: center;
+justify-self:end;
 }
 
 /*-------------------------------------------------QUOTE SECTION------------------------------------------------------------*/ 
@@ -145,18 +139,18 @@ text-align:center;
 /*-------------------------------------------------TEXT ABOUT SECTION------------------------------------------------------------*/
 section#textabout {
 display:grid;
-grid-gap:15px;
+grid-gap:20px;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows:auto;
-width:100%;
 position:relative;
 top:0;
 bottom:0;
 z-index:1; 
-padding:30px;
 line-height:1.5em;
 background-image: url("../img/about1.jpg");
 background-size: cover;
+padding:25px 15px 25px 15px;
+text-align:justify;
 }
 
 div.title {
@@ -166,11 +160,12 @@ margin:15px 0 15px 0;
 color:#7f7872;
 }
 
-section#textabout p {margin:10px 0 10px 0;}
+section#textabout p {margin:10px 10px 10px 0;}
+
 
 .first {border-right:1px solid #f6f6f6;}
-.second {align-self: end; border-right:1px solid #f6f6f6;}
-.third {align-self: center;}
+.second {align-self: center; border-right:1px solid #f6f6f6;}
+.third {align-self: ;}
 
 
 /*-------------------------------------------------PORTFOLIO SECTION------------------------------------------------------------*/
@@ -292,4 +287,99 @@ color:#fff;
 text-align: center;
 padding: 10px 0;
 letter-spacing: 0.05em;
+}
+
+/*------------------------------------------------SCREENS------------------------------------------------------------------------*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+header {
+display:grid;
+grid-template-columns:1fr;
+}
+
+#logo {
+font-size: ;
+display:grid;
+justify-items: center;
+margin: 0;
+}
+
+.menu {
+font-size: 1em;
+}
+
+section#about {
+display:grid;
+grid-template-columns: 1fr;
+}
+
+.name {
+font-size: 1.5em;
+}
+
+.aboutactivity p {
+font-size: 75%;
+margin: 10px;
+}
+
+#quote p {
+font-size: 1em;
+text-align: justify;
+}
+
+section#textabout {
+display:grid;
+grid-template-columns: 1fr;
+}
+
+div.title {
+font-size:1.2em;
+}
+
+section#portfolio {
+display:grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+}
+
+section#portfolio h1 {
+display:grid;
+grid-column: 1;
+grid-row:1;
+}
+
+.box p {
+}
+
+.box.one {
+display: grid;
+grid-column: 1;
+grid-row: 2;
+align-content: end;
+}
+
+.box.two {
+display: grid;
+grid-column: 1;
+grid-row: 3;
+align-content: end;
+}
+
+.box.three {
+display: grid;
+grid-column: 1;
+grid-row: 4;
+align-content: end;
+}
+
+.contactmain p {
+line-height: 2;
+font-size:1em;
+}
+
+
+
+
 }
