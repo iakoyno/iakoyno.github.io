@@ -314,7 +314,7 @@ margin: 1px;
 }
 
 div.menu a:hover {
-border:none;
+border:0px;
 }
 
 section#about {
