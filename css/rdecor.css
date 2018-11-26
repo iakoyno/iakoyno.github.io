@@ -478,8 +478,15 @@ font-size: 1.5em;
 
 }
 
-@media only screen and (min-width: 360px) and (orientation: portrait) { 
-/* Your Styles... */
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 4),
+  only screen and (   min--moz-device-pixel-ratio: 4),
+  only screen and (     -o-min-device-pixel-ratio: 4/1),
+  only screen and (        min-device-pixel-ratio: 4),
+  only screen and (                min-resolution: 534dpi),
+  only screen and (                min-resolution: 4dppx) { 
+    /* Retina styles here */
+
   #logo {
 font-size: 1.2em;
 }
@@ -497,3 +504,4 @@ font-size: 1em;
 }
 
 }
+
