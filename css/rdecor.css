@@ -315,7 +315,7 @@ margin: 1px;
 
 div.menu a:hover {
 border-top: 0px solid #fff;	
-color:red;
+font-weight:bold;
 }
 
 section#about {
