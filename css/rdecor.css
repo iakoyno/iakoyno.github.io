@@ -53,7 +53,9 @@ color: #2d2b28;
 font-weight:700;
 }
 
-.300 {font-weight:300;}
+.span {
+font-weight:300; 
+}
 
 .menu {
 font-family: 'Jura', sans-serif;
@@ -64,9 +66,9 @@ justify-self: center;
 
 div.menu a {color: #393633; font-weight: 600;}
 
-div.menu a:hover, div.menu a:active {
+div.menu a:hover {
 border-top: /*#43424a*/ 3px solid #393633;	
-padding:5px;
+padding:1px;
 }
 
 /*-------------------------------------------------ABOUT SECTION------------------------------------------------------------*/
@@ -98,14 +100,14 @@ align-self: center;
 }
 
 .aboutactivity p {
-margin:15px 20px 15px 0; 
+margin:15px 0px 15px 0; 
 font-size: 1.2em;
 text-align:right;
 }
 
 .aboutimg {
 background-image: url("../img/ralitsa-about-sm.jpg");
-width:100%;
+width:80%;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -308,6 +310,11 @@ margin: 0;
 
 .menu {
 font-size: 1em;
+margin: 1px;
+}
+
+div.menu a:hover {
+border:none;
 }
 
 section#about {
@@ -321,7 +328,11 @@ font-size: 1.5em;
 
 .aboutactivity p {
 font-size: 75%;
-margin: 10px;
+margin: 20px;
+}
+
+.aboutimg {
+width:100%;
 }
 
 #quote p {
@@ -379,6 +390,7 @@ line-height: 2;
 font-size:1em;
 }
 
+footer { font-size:0.75em;}
 
 
 
