@@ -477,3 +477,23 @@ font-size: 1.5em;
 }
 
 }
+
+@media only screen and (min-width: 360px) and (orientation: portrait) { 
+/* Your Styles... */
+  #logo {
+font-size: 1.2em;
+}
+
+.menu {
+font-size: 1em;
+}
+
+.name {
+font-size: 1.5em;
+}
+
+#quote p {
+font-size: 1em;
+}
+
+}
