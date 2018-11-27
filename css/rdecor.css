@@ -101,8 +101,8 @@ align-self: center;
 }
 
 .aboutactivity p {
-margin:15px 0px 15px 0; 
-font-size: 1.2em;
+margin:1em; 
+font-size:110%;
 text-align:right;
 }
 
@@ -330,7 +330,6 @@ font-weight:600;
 
 .aboutactivity p {
 font-size: 75%;
-margin: 20px;
 }
 
 .aboutimg {
@@ -441,7 +440,6 @@ font-weight:600;
 
 .aboutactivity p {
 font-size: 75%;
-margin: 20px;
 }
 
 .aboutimg {
@@ -591,7 +589,6 @@ font-weight:600;
 
 .aboutactivity p {
 font-size: 75%;
-margin: 20px;
 }
 
 
