@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700|Marck+Script&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&subset=cyrillic');
 
 @font-face {
     font-family: 'neumannregular';
@@ -529,6 +529,7 @@ font-weight:600;
 
 .aboutactivity p {
 margin: 1em;
+font-size: 80%;
 }
 
 .aboutimg {
@@ -588,7 +589,7 @@ font-weight:600;
 }
 
 .aboutactivity p {
-font-size: 75%;
+font-size: 80%;
 }
 
 
