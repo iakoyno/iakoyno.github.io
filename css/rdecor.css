@@ -14,7 +14,7 @@
 
 *,*::before, *::after {margin:0; padding:0;}
 
-body {margin:0; font-family: 'Jura', sans-serif; font-size:100%; color:#242322;}
+body {margin:0; font-family: 'Jura', sans-serif; font-size:16px; color:#242322;}
 
 a {text-decoration:none;}
 img {padding: 0; margin: 0;}
@@ -46,7 +46,7 @@ z-index:9999;
 
 #logo {
 /*font-family: 'neumannregular';*/
-font-size: 1.7em;
+font-size: 1.7rem;
 letter-spacing: 0.02em;
 margin: 0 0 0 20px;
 color: #2d2b28;
@@ -59,7 +59,7 @@ font-weight:300;
 
 .menu {
 font-family: 'Jura', sans-serif;
-font-size: 1.2em;
+font-size: 1.2rem;
 align-self: center;
 justify-self: center;
 }
@@ -88,11 +88,11 @@ background-color:#2d2b28;
 
 .name {
 /*font-family: 'neumannregular';*/
-font-size: 2.8em;
+font-size: 3rem;
 font-weight: 300;
-letter-spacing: 0.2em;
+letter-spacing: 2px;
 color:#fff;
-line-height: 2em;
+line-height: 2;
 }
 
 .aboutactivity {
@@ -102,7 +102,7 @@ align-self: center;
 
 .aboutactivity p {
 margin:1em; 
-font-size:110%;
+font-size:1.5rem;
 text-align:right;
 }
 
@@ -131,7 +131,7 @@ justify-content: center;
 
 #quote p {
 margin: 3em;
-font-size: 2em;
+font-size: 2rem;
 line-height: 1.5;
 text-align:center;
 }
@@ -147,20 +147,20 @@ position:relative;
 top:0;
 bottom:0;
 z-index:1; 
-line-height:1.5em;
+line-height:1.5;
 background-image: url("../img/about1.jpg");
 background-size: cover;
-padding:25px 15px 25px 15px;
+padding:2em 1em;
 }
 
 div.title {
-font-size:2em;
+font-size:2rem;
 font-weight:bold;
 margin:15px 0 15px 0;
 color:#7f7872;
 }
 
-section#textabout p {margin:10px 10px 10px 0;}
+section#textabout p {margin:;}
 
 
 .first {border-right:1px solid #f6f6f6;}
@@ -180,11 +180,11 @@ position:relative;
 top:0;
 bottom:0;
 z-index:1;
-margin-bottom:70px;
+margin-bottom:5em;
 }
 
 section#portfolio h1 {
-font-size: 2.3em;
+font-size: 2.3rem;
 color:#7f7872;
 text-align: center;
 display:grid;
@@ -192,7 +192,7 @@ grid-column: 2 / 3;
 grid-row:1;
 align-self: center;
 border-bottom: 1px solid #7f7872;
-padding-bottom:15px;
+padding-bottom:0.5em;
 }
 
 .box {
@@ -204,10 +204,9 @@ background-repeat: no-repeat;
 
 .box p {
 color: #fff;
-font-size: 1.2em;
-padding: 15px;
+font-size: 1.2rem;
+padding: 1em;
 text-align:center;
-font-weight:bold;
 background:rgba(0, 0, 0, .5);
 }
 
@@ -261,8 +260,8 @@ background-color:rgba(57, 54, 51, 0.5);
 color: #fff;
 text-align:center;
 line-height: 2;
-font-size:2em;
-padding:25px;
+font-size:2rem;
+padding:1.5em;
 }
 
 .contactmain a {color:#fff;}
@@ -285,15 +284,19 @@ width:100%;
 background-color:#242322;
 color:#fff;
 text-align: center;
-padding: 10px 0;
+padding: 1em;
 letter-spacing: 0.05em;
 }
 
 /*------------------------------------------------SCREENS------------------------------------------------------------------------*/
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+
+@media (max-width: 599px) { 
+
+html, body{
+width:100%;
+overflow-x:hidden;
+}
+
 header {
 display:grid;
 grid-template-columns:1fr;
@@ -323,18 +326,21 @@ width:100%;
 height:auto;
 }
 
-.name {
-font-size: 1.5em;
-font-weight:600;
+.aboutactivity {
+padding:1em;
 }
 
 .aboutactivity p {
-font-size: 75%;
+font-size: 1em;
+}
+
+.name {
+font-size: 1.4em;
+font-weight: 600;
 }
 
 .aboutimg {
 width:100%;
-height: 80vh;
 }
 
 #quote p {
@@ -347,10 +353,6 @@ display:grid;
 grid-template-columns: 1fr;
 }
 
-div.title {
-font-size:1.5em;
-}
-
 section#portfolio {
 display:grid;
 grid-template-columns: 1fr;
@@ -361,9 +363,6 @@ section#portfolio h1 {
 display:grid;
 grid-column: 1;
 grid-row:1;
-}
-
-.box p {
 }
 
 .box.one {
@@ -388,169 +387,11 @@ align-content: end;
 }
 
 .contactmain p {
-line-height: 2;
 font-size:1.5em;
 }
 
 footer { font-size:0.75em;}
 
-}
-
-
-/*------------Google Nexus 5----------------*/
-
-@media only screen 
-and (min-width: 360px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 3.0) {
-  header {
-display:grid;
-grid-template-columns:1fr;
-}
-
-#logo {
-font-size: ;
-display:grid;
-justify-items: center;
-margin: 0;
-}
-
-.menu {
-font-size: 1em;
-margin: 1px;
-}
-
-div.menu a:hover {
-border-top: 0px solid #fff;	
-font-weight:bold;
-}
-
-section#about {
-display:grid;
-grid-template-columns: 1fr;
-grid-template-rows:1fr 1fr;
-width:100%;
-height:auto;
-}
-
-.name {
-font-size: 1.5em;
-font-weight:600;
-}
-
-.aboutactivity p {
-font-size: 75%;
-}
-
-.aboutimg {
-width:100%;
-height: 80vh;
-}
-
-#quote p {
-font-size: 1em;
-text-align: justify;
-}
-
-section#textabout {
-display:grid;
-grid-template-columns: 1fr;
-}
-
-div.title {
-font-size:1.5em;
-}
-
-section#portfolio {
-display:grid;
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-}
-
-section#portfolio h1 {
-display:grid;
-grid-column: 1;
-grid-row:1;
-}
-
-.box p {
-}
-
-.box.one {
-display: grid;
-grid-column: 1;
-grid-row: 2;
-align-content: end;
-}
-
-.box.two {
-display: grid;
-grid-column: 1;
-grid-row: 3;
-align-content: end;
-}
-
-.box.three {
-display: grid;
-grid-column: 1;
-grid-row: 4;
-align-content: end;
-}
-
-.contactmain p {
-line-height: 2;
-font-size:1.5em;
-}
-
-footer { font-size:0.75em;}
-}
-
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 640px) 
-and (max-device-width : 1024px) {
-  #logo {
-font-size: 1.2em;
-}
-
-.menu {
-font-size: 1em;
-margin: 1px;
-}
-
-section#about {
-}
-
-.name {
-font-size: 1.5em;
-font-weight:600;
-}
-
-.aboutactivity p {
-margin: 1em;
-font-size: 80%;
-}
-
-.aboutimg {
-width:100%;
-}
-
-#quote p {
-font-size: 1.1em;
-text-align: justify;
-}
-
-div.title {
-font-size:1.5em;
-}
-
-.contactmain p {
-line-height: 2;
-font-size:1.5em;
-}
-
-  
 }
 
 /* Samsung Galaxy S7 Edge ----------- */
@@ -565,7 +406,6 @@ font-weight:600;
 
 }
 
-
 @media
   only screen and (-webkit-min-device-pixel-ratio: 4),
   only screen and (   min--moz-device-pixel-ratio: 4),
@@ -574,40 +414,13 @@ font-weight:600;
   only screen and (                min-resolution: 534dpi),
   only screen and (                min-resolution: 4dppx) { 
     /* Retina styles here */
-
-  #logo {
-font-size: 1.2em;
 }
 
-.menu {
-font-size: 1em;
-}
+@media (min-width: 600px) { 
 
-.name {
-font-size: 1.5em;
-font-weight:600;
-}
-
-.aboutactivity p {
-font-size: 80%;
-}
-
-
-#quote p {
-font-size: 1.1em;
-text-align: justify;
-}
-
-div.title {
-font-size:1.5em;
-}
-
-
-.contactmain p {
-line-height: 2;
-font-size:1.5em;
-}
-
-footer { font-size:0.75em;}
+#logo {margin: 0 0 0 2px;}
+.name { line-height: 0.8; font-size:3em; }
+.aboutimg { width:80%; }
 
 }
+
