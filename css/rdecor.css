@@ -290,12 +290,35 @@ letter-spacing: 0.05em;
 
 /*------------------------------------------------SCREENS------------------------------------------------------------------------*/
 
+@media (min-width: 871px) and (max-width: 1800px)  {
+html, body{
+width:100%;
+overflow-x:hidden;
+} /*remove the white space to the right of the content */
+
+ }
+
+@media (min-width: 600px) and (max-width: 870px)  { 
+
+html, body{
+width:100%;
+overflow-x:hidden;
+} /*remove the white space to the right of the content */
+
+
+#logo {margin: 0 0 0 2px;}
+.name { line-height: 0.8; font-size:3em; }
+.aboutimg { width:100%; }
+
+}
+
+
 @media (max-width: 599px) { 
 
 html, body{
 width:100%;
 overflow-x:hidden;
-}
+} /*remove the white space to the right of the content */
 
 header {
 display:grid;
@@ -399,28 +422,7 @@ footer { font-size:0.75em;}
 and (-webkit-min-device-pixel-ratio: 3)
 and (min-resolution: 192dpi)and max-width:640px) {
   background-image: url('https://i.ytimg.com/vi/zhBxfNm3rJE/maxresdefault.jpg');
-.name {
-font-size: 1.5em;
-font-weight:600;
+.name { font-size: 1.5em; font-weight:600; }
 }
 
-}
-
-@media
-  only screen and (-webkit-min-device-pixel-ratio: 4),
-  only screen and (   min--moz-device-pixel-ratio: 4),
-  only screen and (     -o-min-device-pixel-ratio: 4/1),
-  only screen and (        min-device-pixel-ratio: 4),
-  only screen and (                min-resolution: 534dpi),
-  only screen and (                min-resolution: 4dppx) { 
-    /* Retina styles here */
-}
-
-@media (min-width: 600px) { 
-
-#logo {margin: 0 0 0 2px;}
-.name { line-height: 0.8; font-size:3em; }
-.aboutimg { width:80%; }
-
-}
 
