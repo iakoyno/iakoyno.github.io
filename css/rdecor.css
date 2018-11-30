@@ -45,7 +45,6 @@ z-index:9999;
 }
 
 #logo {
-/*font-family: 'neumannregular';*/
 font-size: 1.7rem;
 letter-spacing: 0.02em;
 margin: 0 0 0 20px;
@@ -87,7 +86,6 @@ background-color:#2d2b28;
 }
 
 .name {
-/*font-family: 'neumannregular';*/
 font-size: 3rem;
 font-weight: 300;
 letter-spacing: 2px;
@@ -148,8 +146,9 @@ top:0;
 bottom:0;
 z-index:1; 
 line-height:1.5;
-background-image: url("../img/about1.jpg");
-background-size: cover;
+background-color:#efe6df;
+/*background-image: url("../img/about1.jpg");
+background-size: cover;*/
 padding:2em 1em;
 }
 
